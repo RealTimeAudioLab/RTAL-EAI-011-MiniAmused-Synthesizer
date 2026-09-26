@@ -294,7 +294,7 @@ docs/MiniAmused_EFX.jpg
 
 # OSC -- Oscillators
 
-![MiniAmused OSC](docs/MiniAmused_OSC.jpg)
+![MiniAmused OSC](images/MiniAmused_OSC.jpg)
 
 The **OSC** page defines the raw sound of the monophonic voice.
 MiniAmused uses three oscillators. They are not separate voices: all
@@ -352,7 +352,7 @@ one monophonic signal path.
 
 # MIX -- Mixer and Signal Character
 
-![MiniAmused MIX](docs/MiniAmused_MIX.jpg)
+![MiniAmused MIX](images/MiniAmused_MIX.jpg)
 
 The **MIX** page determines how strongly the individual sound sources
 enter the following filter stage and also contains parameters that
@@ -404,7 +404,7 @@ the way the following stages are driven.
 
 # FILTER -- Ladder Filter and Filter Envelope
 
-![MiniAmused FILTER](docs/MiniAmused_FILTER.jpg)
+![MiniAmused FILTER](images/MiniAmused_FILTER.jpg)
 
 The **FILTER** page contains the main subtractive sound-shaping stage
 and its dedicated envelope controls.
@@ -454,7 +454,7 @@ complete ADSR envelope rather than an attack/decay-only contour.
 
 # MOD -- Performance, Modulation and Loudness
 
-![MiniAmused MOD](docs/MiniAmused_MOD.jpg)
+![MiniAmused MOD](images/MiniAmused_MOD.jpg)
 
 The **MOD** page collects the controls that affect performance
 behaviour, modulation routing and the amplitude contour. This is why
@@ -517,7 +517,7 @@ AMP or ENV page.
 
 # PRESET -- Preset Management
 
-![MiniAmused PRESET](docs/MiniAmused_PRESET.jpg)
+![MiniAmused PRESET](images/MiniAmused_PRESET.jpg)
 
 The **PRESET** page manages complete MiniAmused sounds on the microSD
 card.
@@ -575,7 +575,7 @@ PC 99 → Preset 099
 
 # EFX -- Stereo Delay
 
-![MiniAmused EFX](docs/MiniAmused_EFX.jpg)
+![MiniAmused EFX](images/MiniAmused_EFX.jpg)
 
 The **EFX** page contains exactly one effect: the MiniAmused **Stereo
 Delay**. There is no chorus, flanger, phaser or reverb in the current
