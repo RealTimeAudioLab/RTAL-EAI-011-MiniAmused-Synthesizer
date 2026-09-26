@@ -336,12 +336,13 @@ three feed the same mixer, filter and amplifier path.
 
   **OSC 3 TUNE**                      Detunes oscillator 3 relative to
                                       the main pitch.
-
+  
   **OSC 3 KEYBOARD CONTROL**          Determines whether oscillator 3
                                       follows the played keyboard note.
                                       Disabling keyboard control allows
                                       OSC 3 to be used more like an
-                                      independent modulation source.
+                                      independent modulation source.                                    
+                                      
   -----------------------------------------------------------------------
 
 The three-oscillator architecture follows the classic
