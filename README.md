@@ -396,6 +396,7 @@ influence the character of the combined signal.
 
   **MASTER VOLUME**                   Controls the overall synthesizer
                                       output level.
+                                      
   -----------------------------------------------------------------------
 
 The individual oscillator levels therefore influence both balance and
@@ -446,6 +447,7 @@ and its dedicated envelope controls.
 
   **FILTER RELEASE**                  Sets how long the filter envelope
                                       takes to return after Note Off.
+                                      
   -----------------------------------------------------------------------
 
 The addition of **FILTER RELEASE** means the filter contour is a
@@ -508,6 +510,7 @@ MiniAmused does not need separate LFO, ENV or AMP tabs.
 
   **LOUDNESS RELEASE**                Sets how long the loudness envelope
                                       takes to fade after Note Off.
+                                      
   -----------------------------------------------------------------------
 
 The loudness controls are the amplitude-envelope controls of the single
@@ -559,6 +562,7 @@ card.
 
   **Header Preset Name**              The currently active preset name is
                                       shown in the instrument UI header.
+                                      
   -----------------------------------------------------------------------
 
 Preset loading is deliberately deferred out of the MIDI task so that
@@ -625,6 +629,7 @@ MiniAmused effect architecture.
 
   **DIV**                             Selects the rhythmic delay division
                                       when SYNC is active.
+                                      
   -----------------------------------------------------------------------
 
 ## FREE mode
