@@ -1,3 +1,76 @@
+# RTAL MiniAmused v1.2.3
+
+### Monophonic ESP32-S3 Synthesizer with Touch UI, Stereo Delay and Markov Arpeggiator
+
+**RTAL-EAI-011 – Real Time Audio Lab**
+
+RTAL MiniAmused is a monophonic virtual-analog synthesizer built around the
+ESP32-S3 and the Guition JC4827W543 480×272 touch display.
+
+MiniAmused combines a classic three-oscillator subtractive synthesizer
+architecture with a modern embedded DSP platform, touch operation,
+preset management, DIN and USB MIDI, a stereo delay engine and an
+advanced arpeggiator with probabilistic Markov sequencing.
+
+Version **1.2.3** represents the current stable release of the project.
+
+---
+
+## Highlights
+
+- ESP32-S3 based real-time synthesizer
+- Guition JC4827W543 480×272 capacitive touch display
+- Monophonic three-oscillator architecture
+- Six oscillator waveforms
+- Noise generator
+- 4-stage nonlinear ladder-style low-pass filter
+- 2× oversampled mixer/filter path
+- Separate Filter and Loudness ADSR envelopes
+- Glide / Portamento
+- LOW / LAST / HIGH note priority
+- SINGLE / MULTI trigger modes
+- Modulation bus with OSC3 and Noise
+- Stereo Delay with five Ping-Pong modes
+- MIDI Clock synchronized Delay
+- Advanced Arpeggiator
+- Markov-based note generation
+- Density, Swing, Ratchet, Accent and Repeat
+- Internal 40–300 BPM ARP clock
+- External MIDI Clock synchronization
+- DIN MIDI
+- Native USB MIDI
+- MIDI Learn / extended CC mapping
+- 128 presets on microSD
+- LVGL 8.4.0 touch interface
+- Dedicated real-time Audio, MIDI and ARP processing
+
+---
+
+# Synthesizer Architecture
+
+MiniAmused follows a deliberately straightforward subtractive signal path:
+
+```text
+                       MIDI / ARPEGGIATOR
+                               |
+                               v
+                         NOTE / GLIDE
+                               |
+                               v
+OSC 1 ----\
+OSC 2 -----+----> MIXER / DRIVE ----> LADDER FILTER ----> LOUDNESS
+OSC 3 ----/              ^                    ^                |
+NOISE ----/               |                    |                |
+                      FEEDBACK             FILTER ADSR          |
+                                                               v
+                                                        STEREO DELAY
+                                                               |
+                                                               v
+                                                           I2S OUTPUT
+
+
+
+
 # RTAL MiniAmused v1.0.0 FINAL - Release Notes
 
 ## First stable public release
