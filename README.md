@@ -277,17 +277,6 @@ are integrated into the six functional pages of the instrument. This
 keeps the UI compact and preserves a direct, performance-oriented
 workflow.
 
-Each screenshot in this documentation follows the real tab name:
-
-``` text
-docs/MiniAmused_OSC.jpg
-docs/MiniAmused_MIX.jpg
-docs/MiniAmused_FILTER.jpg
-docs/MiniAmused_MOD.jpg
-docs/MiniAmused_PRESET.jpg
-docs/MiniAmused_EFX.jpg
-```
-
 ------------------------------------------------------------------------
 
 # OSC -- Oscillators
