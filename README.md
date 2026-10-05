@@ -729,6 +729,7 @@ MiniAmused provides five note-selection modes:
 
   **TEMPO**                           Internal tempo from **40--300 BPM**
                                       when MIDI SYNC is disabled.
+                                      
   -----------------------------------------------------------------------
 
 ------------------------------------------------------------------------
@@ -1008,7 +1009,8 @@ vertical space is available for the main preset actions.
 
   **Header Preset Name**              Shows the currently active preset
                                       in the instrument UI.
-  -----------------------------------------------------------------------
+                                      
+-----------------------------------------------------------------------
 
 Preset loading is deliberately deferred out of time-critical MIDI
 processing so SD-card access does not interfere with audio or MIDI
@@ -1209,7 +1211,7 @@ engine.
 
 # Startup Screen
 
-![MiniAmused Startup](images/MiniAmused_STARTUP.jpg)
+![MiniAmused Startup](images/MiniAmused_MAIN.jpg)
 
 Version 1.2.3 introduces a dedicated MiniAmused startup screen.
 
