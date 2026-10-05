@@ -85,8 +85,6 @@ interact with this central signal path.
 
 # Inspired by the Minimoog
 
-![Minimoog Inspiration](docs/Minimoog_Inspiration.jpg)
-
 MiniAmused is strongly inspired by one of the most influential
 electronic musical instruments ever created: the **Moog Minimoog**.
 
