@@ -1211,7 +1211,7 @@ engine.
 
 # Startup Screen
 
-![MiniAmused Startup](images/MiniAmused_MAIN.jpg)
+![MiniAmused Startup](images/MiniAmused_MAIN_.jpg)
 
 Version 1.2.3 introduces a dedicated MiniAmused startup screen.
 
