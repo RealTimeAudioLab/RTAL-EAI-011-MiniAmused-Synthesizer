@@ -905,7 +905,7 @@ significantly wider stereo output after the delay stage.
 
 # PRESET -- Preset Management
 
-![MiniAmused PRESET](docs/MiniAmused_PRESET.jpg)
+![MiniAmused PRESET](images/MiniAmused_PRESET.jpg)
 
 MiniAmused provides preset management for storing complete synthesizer
 configurations.
