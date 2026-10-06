@@ -649,7 +649,7 @@ engine decides the next movement relative to the current position.
 ``` text
                        ┌── SAME ──────┐
                        │              │
-HELD CHORD → CURRENT NOTE ── +1 ─────┤
+HELD CHORD → CURRENT NOTE ──  +1 ─────┤
                        │      -1      │
                        │      +2      ├──► NEXT NOTE
                        │      -2      │
@@ -1377,7 +1377,7 @@ MiniAmused DSP
 
 ``` text
 ┌──────────────────────────────────────────┐
-│            MiniAmused v1.2.3            │
+│            MiniAmused v1.2.3             │
 ├──────────────────────────────────────────┤
 │               Synth Engine               │
 │ Oscillators → Mixer → Filter → Amplifier │
