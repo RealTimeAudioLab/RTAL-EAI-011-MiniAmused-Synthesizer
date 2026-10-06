@@ -3,6 +3,7 @@
 ### Version 1.2.3 · Monophonic Virtual-Analog Synthesizer · Markov Chain Arpeggiator · ESP32-S3 · 4.3" Touch UI · MIDI · Real-Time DSP
 
 ![RTAL MiniAmused](images/MiniAmused_MAIN_.jpg)
+https://github.com/user-attachments/assets/c5e3364c-e84a-4154-8393-65726a015332
 
 **RTAL MiniAmused** is a monophonic virtual-analog synthesizer developed
 by **RealTimeAudioLab (RTAL)** as part of the **RTAL Embedded Audio
