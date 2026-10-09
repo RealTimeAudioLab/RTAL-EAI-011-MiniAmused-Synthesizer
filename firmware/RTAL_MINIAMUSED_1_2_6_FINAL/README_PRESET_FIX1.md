@@ -1,0 +1,1 @@
+Fix: LVGL 8 dispatches RELEASED before CLICKED. Preserve preset tap arm across RELEASED, stop hold repeat immediately; PRESS_LOST cancels arm. All other firmware logic unchanged. Hardware test pending.
