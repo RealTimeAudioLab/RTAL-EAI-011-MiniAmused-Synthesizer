@@ -1,5 +1,3 @@
-<div align="center">
-
 # RTAL MiniAmused
 
 ### A playable virtual-analog synthesizer, built on the ESP32-S3
@@ -256,8 +254,6 @@ MiniAmused draws inspiration from the **musical immediacy and subtractive signal
 **Acknowledgements:** Bob Moog and the designers of classic synthesizers; Espressif Systems; Guition; the LVGL, Arduino and open-source audio communities.
 
 ---
-
-<div align="center">
 
 ### RTAL MiniAmused · v1.2.6 FINAL
 
