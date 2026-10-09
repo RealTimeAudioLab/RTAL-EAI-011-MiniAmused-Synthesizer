@@ -1,34 +1,8 @@
 # RTAL-EAI-011 MiniAmused Synthesizer
 
-## What's New in v1.2.6 FINAL?
+## Version 1.2.6 FINAL · Mono/Dual Virtual-Analog Synthesizer · Markov Chain Arpeggiator · ESP32-S3 · 4.3" Touch UI · MIDI · Real-Time DSP
 
-**Reliable preset navigation:** The PRESET UP/DOWN touch controls now use a corrected LVGL event sequence with 180 ms debounce. A short tap moves exactly one slot; holding a button starts automatic scrolling after approximately 500 ms, with acceleration. The fix preserves the correct order of RELEASED and CLICKED events. This behaviour was confirmed on the instrument after the RC3 PRESET FIX1 correction.
-
-**Consistent discrete-touch handling:** The 180 ms touch debounce is retained for ON/OFF parameters, including ARP and HOLD. MIDI input and continuous sliders remain independent of touch debounce.
-
-**SD-card diagnostics:** Missing or uninitialized microSD media and preset-directory failures produce visible status information instead of silently failing. An absent card does not prevent synthesis and MIDI operation. Empty preset slots are distinguished from media errors.
-
-**Audio continuity:** MONO/DUAL synthesis, the 2× oversampled four-stage ladder filter with resonance bass compensation, the Markov arpeggiator and all five stereo-delay ping-pong modes remain unchanged from the proven v1.2.5 audio baseline.
-
-**Release basis:** v1.2.6 FINAL is based on the hardware-tested `v1.2.6 RC3 PRESET FIX1` firmware.
-
----
-
-
-> **Current release: v1.2.6 FINAL** · Mono/Dual (up to 2 voices × 3 oscillators), fuller ladder resonance, reliable ON/OFF touch controls.
-
-## Evolution through v1.2.5
-
-**v1.2.4 – Dual Voice:** Added the `VOICE MODE` control on the **MOD** page. `MONO` uses one complete three-oscillator voice; `DUAL` permits **two simultaneously sounding three-oscillator voices** (up to six oscillator instances). Both voices share the downstream mixer, four-stage nonlinear ladder filter, filter/loudness envelopes and stereo delay. The second voice has independent oscillator phases and pitch/glide state; voice allocation uses oldest-voice stealing. In DUAL mode the oscillator sum is normalized by **0.65** when both voices are active, instead of 1.0 for a single active voice. The audio engine was optimized for two-voice operation at 48 kHz / 128 frames; the detailed DSP profiler was removed from the final firmware.
-
-**v1.2.5 – Fuller Resonance & Touch Reliability:** Added resonance-dependent bass compensation to the existing four-stage ladder filter, beginning around **20% EMPHASIS**. The tuned RC2 response retains more body at medium-to-high resonance without introducing a direct dry-signal bypass. The filter retains **2× oversampling**. Discrete ON/OFF touch controls now use **180 ms debounce**, addressing double triggers reported on **ARP ON/OFF** and **HOLD ON/OFF**.
-
-**Compatibility and scope:** The seven pages (OSC / MIX / FILTER / MOD / EFX / ARP / PRESET), Markov arpeggiator, MIDI/CC32 banks, 128 microSD preset slots and stereo delay remain. The historical v1.2.3 features below are retained. The new `VOICE MODE` parameter is a UI control on the MOD page; no new MIDI CC assignment is claimed here. Existing presets may need a quick review of their voice-mode setting after upgrading.
-
-
-### Version 1.2.6 FINAL · Mono/Dual Virtual-Analog Synthesizer · Markov Chain Arpeggiator · ESP32-S3 · 4.3" Touch UI · MIDI · Real-Time DSP
-
-#### MiniAmused Live Sound Demo 
+### MiniAmused Live Sound Demo 
 [https://github.com/user-attachments/assets/834537af-4713-4496-9c79-22cb06b83279](https://github.com/user-attachments/assets/c5e3364c-e84a-4154-8393-65726a015332)
 
 ---
@@ -48,7 +22,7 @@ dedicated arpeggiator engine. The complete instrument is controlled from
 a **4.3-inch capacitive touchscreen** using the **Guition JC4827W543
 ESP32-S3 display platform**.
 
-Version **1.2.3** significantly expanded the original instrument with a
+Version **1.2.6** significantly expanded the original instrument with a
 dedicated **Markov Chain Arpeggiator**, rhythmic performance controls,
 internal and external clock operation, 128 preset positions, MIDI
 mapping/learning, an optimized seven-page touchscreen workflow and a
@@ -85,9 +59,36 @@ MiniAmused combines:
 
 ------------------------------------------------------------------------
 
+## What's New in v1.2.6 FINAL?
+
+**Reliable preset navigation:** The PRESET UP/DOWN touch controls now use a corrected LVGL event sequence with 180 ms debounce. A short tap moves exactly one slot; holding a button starts automatic scrolling after approximately 500 ms, with acceleration. The fix preserves the correct order of RELEASED and CLICKED events. This behaviour was confirmed on the instrument after the RC3 PRESET FIX1 correction.
+
+**Consistent discrete-touch handling:** The 180 ms touch debounce is retained for ON/OFF parameters, including ARP and HOLD. MIDI input and continuous sliders remain independent of touch debounce.
+
+**SD-card diagnostics:** Missing or uninitialized microSD media and preset-directory failures produce visible status information instead of silently failing. An absent card does not prevent synthesis and MIDI operation. Empty preset slots are distinguished from media errors.
+
+**Audio continuity:** MONO/DUAL synthesis, the 2× oversampled four-stage ladder filter with resonance bass compensation, the Markov arpeggiator and all five stereo-delay ping-pong modes remain unchanged from the proven v1.2.5 audio baseline.
+
+**Release basis:** v1.2.6 FINAL is based on the hardware-tested `v1.2.6 RC3 PRESET FIX1` firmware.
+
+---
+
+
+> **Current release: v1.2.6 FINAL** · Mono/Dual (up to 2 voices × 3 oscillators), fuller ladder resonance, reliable ON/OFF touch controls.
+
+## Evolution through v1.2.5
+
+**v1.2.4 – Dual Voice:** Added the `VOICE MODE` control on the **MOD** page. `MONO` uses one complete three-oscillator voice; `DUAL` permits **two simultaneously sounding three-oscillator voices** (up to six oscillator instances). Both voices share the downstream mixer, four-stage nonlinear ladder filter, filter/loudness envelopes and stereo delay. The second voice has independent oscillator phases and pitch/glide state; voice allocation uses oldest-voice stealing. In DUAL mode the oscillator sum is normalized by **0.65** when both voices are active, instead of 1.0 for a single active voice. The audio engine was optimized for two-voice operation at 48 kHz / 128 frames; the detailed DSP profiler was removed from the final firmware.
+
+**v1.2.5 – Fuller Resonance & Touch Reliability:** Added resonance-dependent bass compensation to the existing four-stage ladder filter, beginning around **20% EMPHASIS**. The tuned RC2 response retains more body at medium-to-high resonance without introducing a direct dry-signal bypass. The filter retains **2× oversampling**. Discrete ON/OFF touch controls now use **180 ms debounce**, addressing double triggers reported on **ARP ON/OFF** and **HOLD ON/OFF**.
+
+**Compatibility and scope:** The seven pages (OSC / MIX / FILTER / MOD / EFX / ARP / PRESET), Markov arpeggiator, MIDI/CC32 banks, 128 microSD preset slots and stereo delay remain. The historical v1.2.3 features below are retained. The new `VOICE MODE` parameter is a UI control on the MOD page; no new MIDI CC assignment is claimed here. Existing presets may need a quick review of their voice-mode setting after upgrading.
+
+------------------------------------------------------------------------
+
 # Version 1.2.3
 
-Version 1.2.3 represents a major development step for MiniAmused.
+Version 1.2.3 was a major development step for MiniAmused.
 
 The original monophonic virtual-analog architecture remains available as MONO mode, but the performance layer has been expanded
 substantially.
