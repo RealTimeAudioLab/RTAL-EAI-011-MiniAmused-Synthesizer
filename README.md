@@ -86,7 +86,7 @@ MiniAmused combines:
 
 ------------------------------------------------------------------------
 
-# Version 1.2.3
+## Version 1.2.3
 
 Version 1.2.3 was a major development step for MiniAmused.
 
