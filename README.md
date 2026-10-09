@@ -23,7 +23,8 @@
 
 Hear and see the actual instrument. The MP4 includes audio and plays directly in GitHub's README viewer.
 
-https://github.com/user-attachments/assets/c5e3364c-e84a-4154-8393-65726a015332
+https://github.com/user-attachments/assets/30ecef16-6080-4b98-9c3e-df4c5270c23e
+
 
 ---
 
