@@ -9,7 +9,7 @@
 ![Interface](https://img.shields.io/badge/Interface-4.3%22%20Touch-5c4db1?style=for-the-badge)
 ![Audio](https://img.shields.io/badge/Audio-48%20kHz-1677a4?style=for-the-badge)
 
-**RTAL-EAI-011 · RealTimeAudioLab · v1.2.6 FINAL**
+**RTAL-EAI-011 · RealTimeAudioLab · v1.2.7 FINAL**
 
 <img src="images/MiniAmused_MAIN.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
 
