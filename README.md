@@ -256,7 +256,7 @@ MiniAmused draws inspiration from the **musical immediacy and subtractive signal
 
 ---
 
-### RTAL MiniAmused · v1.2.6 FINAL
+### RTAL MiniAmused · v1.2.7 FINAL
 
 **Three oscillators. A resonant ladder. Two voices. Endless musical directions.**
 
