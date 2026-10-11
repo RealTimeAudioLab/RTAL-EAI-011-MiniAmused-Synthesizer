@@ -11,7 +11,7 @@
 
 **RTAL-EAI-011 · RealTimeAudioLab · v1.2.7 FINAL**
 
-<img src="images/MiniAmused_MAIN.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
+<img src="images/MiniAmused_MAIN_.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
 
 *An independent hardware instrument inspired by the immediacy of classic subtractive synthesis — with modern embedded DSP, expressive performance controls and a graphical touch interface.*
 
@@ -23,8 +23,7 @@
 
 Hear and see the actual instrument. The MP4 includes audio and plays directly in GitHub's README viewer.
 
-https://github.com/user-attachments/assets/30ecef16-6080-4b98-9c3e-df4c5270c23e
-
+https://github.com/user-attachments/assets/6eb38825-cdb3-44cd-aaee-675d9f082f04
 
 ---
 
