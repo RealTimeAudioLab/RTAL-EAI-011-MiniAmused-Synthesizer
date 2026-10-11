@@ -115,6 +115,19 @@ MiniAmused uses an original **four-stage nonlinear ladder-inspired low-pass filt
 </tr>
 </table>
 
+### Ladder Filter — Measured Technical Comparison
+
+We compared the RTAL MiniAmused four-pole nonlinear ladder filter with the
+Arturia Mini V software synthesizer using **35 white-noise FFT screenshots**.
+The measurements uncovered a 5.12 kHz internal cutoff-parameter limit. 
+A focused experimental patch expanded the cutoff calculation and was validated by FFT and listening tests.
+
+- [Technical report (English)](docs/technical/RTAL_MiniAmused_Ladder_Filter_Study_EN.md)
+- [Technischer Bericht (Deutsch)](docs/technical/RTAL_MiniAmused_Ladder_Filter_Studie_DE.md)
+
+![Cutoff range fix — FFT before and after](docs/technical/filter_assets/figures/01_cutoff127_before_after.jpg)
+
+
 ## 03 · Stereo delay — five distinct ping-pong characters
 
 The EFX page contains a purpose-built **stereo delay**, rather than a generic multi-effect collection. It features delay time, feedback, low-pass filtering in the repeat path, dry/wet mix, stereo shaping and rhythmic synchronization.
