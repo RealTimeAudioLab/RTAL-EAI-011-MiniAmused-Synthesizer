@@ -155,7 +155,7 @@ The dedicated arpeggiator is a central part of MiniAmused's playing experience. 
 
 The arpeggiator runs independently of the graphical refresh. **MIDI Clock (F8) and transport events (FA/FB/FC)** are handled separately for reliable synchronization.
 
-<img src="images/MiniAmused_ARP_.jpg" alt="MiniAmused Markov Arpeggiator touchscreen" width="850">
+<img src="images/MiniAmused_ARP.jpg" alt="MiniAmused Markov Arpeggiator touchscreen" width="850">
 
 *ARP — classic note patterns or probabilistic Markov movement, with live rhythm and performance controls.*
 
@@ -193,7 +193,9 @@ The arpeggiator runs independently of the graphical refresh. **MIDI Clock (F8) a
 
 *PERF → SEQ — 16-step matrix and live performance controls.*
 
-<!-- Add subsequent photos here as delivered, in order: images/MiniAmused_SEQ_2.jpg, images/MiniAmused_SEQ_3.jpg, ... -->
+<img src="images/MiniAmused_SEQ_2.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
+
+<img src="images/MiniAmused_SEQ_3.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
 
 ## 06 · A dedicated touchscreen front panel
 
