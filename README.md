@@ -195,10 +195,12 @@ The arpeggiator runs independently of the graphical refresh. **MIDI Clock (F8) a
 
 
 <img src="images/MiniAmused_SEQ_2.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
+
 *Variation EDIT A; Step 02 bears the markers S and ! for SLIDE and ACCENT.*
 
 
 <img src="images/MiniAmused_SEQ_3.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
+
 *Large step editor; note editing in semitone and octave increments; velocity, gate, as well as REST, TIE, SLIDE, and ACCENT.*
 
 
