@@ -1,36 +1,48 @@
-# RTAL MiniAmused v1.3.0 FINAL
+# RTAL MiniAmused v1.3.0 FINAL — Release Notes
 
-**Status:** Releasekandidat auf Basis der vom Anwender bestätigten Hardware-Version v1.3.0 J. Gegenüber J sind keine Klang-, Sequenzer-, MIDI- oder UI-Funktionen geändert; ausschließlich Versionsstrings, ein veralteter Kommentar und Release-Dateien wurden angepasst. Ein neuer Hardwaretest der FINAL-Kennung und ein vollständiger Arduino-Build konnten hier nicht durchgeführt werden.
+**Project:** RealTimeAudioLab · RTAL-EAI-011  
+**Version:** `v1.3.0` · **Status:** FINAL · **Date:** 12 October 2026
 
-## Neu seit v1.2.7
+## Highlights
 
-- Monophoner 16-Step-Sequenzer mit Variationen A/B und Wiedergabe A, B, AB, AABB.
-- Individuelle Sequenzlängen (1 bis 16); pro Step Note, Velocity, Gate, REST, TIE, SLIDE, ACCENT.
-- Tempo, Rate, Swing, MIDI-Clock-Synchronisierung, Keyboard-Transposition, Variation COPY A→B.
-- Touch-Oberfläche mit 8 × 2 Steps, Step-Detailansicht, STEP REC und LIVE REC.
-- Erweiterte Preset-Speicherung (V3), einschließlich beider Variationen; alte V1/V2-Dateien sind mit dem neuen Gerät ladbar.
-- Verbesserte Statusanzeige im Preset-Browser: `SAVING...`, `SAVE OK` und `READY`; Fehler bleiben sichtbar.
-- Überarbeitete Step-Matrix, ARP/SEQ-Tabs, geglättete externe BPM-Anzeige und Startbild v1.3.0.
+This release adds a complete **dual-variation 16-step sequencer** to the established MiniAmused virtual-analog synthesizer. The previously tested **v1.2.7** three-oscillator / nonlinear ladder-filter audio path is preserved.
 
-## Hardware / Toolchain
+### New: 16-step sequencer
 
-- ESP32-S3 / Guition JC4827W543, Touch-TFT 480×272, GT911.
-- Bewährtes Projekt-Setup verwenden: Arduino IDE 2.3.10, ESP32 Core 3.3.11, LVGL 8.4.0.
-- `.ino` und Ordner heißen beide exakt `RTAL_MINIAMUSED_1_3_0_FINAL`.
+- Two independent editable patterns: **A and B**, 1–16 steps each, with **A / B / A+B / AABB** playback.
+- Per-step pitch, velocity, gate, and **REST / TIE / SLIDE / ACCENT**.
+- Large **touch Step Editor**, step matrix and separate PITCH / STEP / GLOBAL controls.
+- **STEP REC** via DIN/USB MIDI keyboard; **LIVE REC** with grid quantization.
+- Tempo (internal 40–300 BPM), 1/4–1/32 rates, swing, root/keyboard transposition, pattern copy A→B.
+- MIDI Clock and transport: **F8 / FA / FB / FC**.
+- **Preset V3** stores the complete synthesizer patch *and both patterns* including settings.
 
-## Sicherheit der SD-Bank
+### Refinements
 
-Vor der ersten V3-Speicherung vollständige Sicherung von `/RTAL_MINIAMUSED/presets/` anlegen. Die neue Firmware liest alte V1/V2-Presets, die ältere v1.2.7-Firmware kann jedoch die neuen V3-Dateien nicht wieder einlesen. Vorhandene Presets deshalb nicht ohne Backup überschreiben.
+- Layout optimized for **480×272**: current-step and selected-step colors, succinct articulation labels, properly spaced ARP/SEQ tabs.
+- External MIDI BPM display with hysteresis to reduce one-BPM flicker. This display stabilization does **not** change sequencer clock timing.
+- Preset browser success statuses automatically return to READY; new saves display SAVING… → SAVE OK → READY, while errors remain visible.
+- Splash screen updated to **v1.3.0**.
 
-## Übernahme / abschließender Kurztest
+### Compatibility
 
-1. Sketch mit denselben Board-/LVGL-Einstellungen wie v1.3.0 J kompilieren und flashen.
-2. Startbild und serielle Kennung `v1.3.0 FINAL` prüfen.
-3. ARP-/SEQ-Bedienung, interne und externe Clock testen.
-4. Beide Sequenzvariationen verändern, Preset speichern, erneut laden und vergleichen.
-5. Ein vorhandenes V2-Preset laden; danach mit Backup ein neues V3-Preset anlegen.
-6. `SAVE OK` nach Wartezeit auf `READY` sowie erneute Bestätigung bei zweitem SAVE kontrollieren.
+**V1 and V2 presets remain readable by v1.3.0**, with the sequencer reset to defaults. **V3 presets are not backward-readable by v1.2.7**: back up existing `.rtal` files before saving with v1.3.0.
 
-## Bezug zur Hardwarefreigabe
+### Hardware and firmware
 
-Der Nutzer hat v1.3.0 J mit „funktioniert“ bestätigt. Da der Programmcode für Audio, Engine, MIDI, Presets und UI gegenüber J unverändert übernommen wurde, ist FINAL eine Release-Umbenennung dieses bestätigten Entwicklungsstandes, nicht eine neue Funktionsversion.
+- ESP32-S3 / Guition JC4827W543, GT911 touchscreen, LVGL 8.4.0.
+- External PCM5102A stereo I2S audio, 48 kHz / 128 frames.
+- DIN MIDI + native USB MIDI and microSD card with 128 preset slots.
+- Download the firmware ZIP and open `RTAL_MINIAMUSED_1_3_0_FINAL.ino` from the identically named sketch folder.
+
+### Testing
+
+The development stages A–J were iteratively verified by the instrument owner on hardware. The renamed FINAL release is promoted from the tested J firmware, with no new functional DSP or sequencer changes. A new independent Arduino compile and flash of the FINAL archive were **not** performed in this documentation workflow.
+
+### Documentation & photos
+
+- [`README.md`](README.md) — full GitHub project overview (English).
+- [`docs/RTAL_MiniAmused_v1.3.0_Handbuch.pdf`](docs/RTAL_MiniAmused_v1.3.0_Handbuch.pdf) — detailed German user and reference manual.
+- `images/MiniAmused_SEQ_1.jpg`, `MiniAmused_SEQ_2.jpg`, … — sequential naming convention for sequencer photos.
+
+**RealTimeAudioLab · RTAL-EAI-011**
