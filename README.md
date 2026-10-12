@@ -194,6 +194,7 @@ The arpeggiator runs independently of the graphical refresh. **MIDI Clock (F8) a
 *PERF → SEQ — 16-step matrix and live performance controls.*
 
 <img src="images/MiniAmused_SEQ_2.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
+*Variation EDIT A; Step 02 bears the markers S and ! for SLIDE and ACCENT.*
 
 <img src="images/MiniAmused_SEQ_3.jpg" alt="MiniAmused 16-step sequencer on its capacitive touchscreen" width="850">
 
