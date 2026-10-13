@@ -11,7 +11,8 @@
 
 **RTAL-EAI-011 · RealTimeAudioLab · v1.3.0 FINAL**
 
-<img src="images/MiniAmused_MAIN.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
+<td width="50%"><img src="images/MiniAmused_MAIN.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
+<td width="50%"><img src="images/MiniAmused_CASE.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
 
 *An independent hardware instrument inspired by the immediacy of classic subtractive synthesis — with modern embedded DSP, expressive performance controls and a graphical touch interface.*
 
