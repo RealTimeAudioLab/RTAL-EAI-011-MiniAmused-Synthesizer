@@ -9,7 +9,7 @@
 ![Interface](https://img.shields.io/badge/Interface-4.3%22%20Touch-5c4db1?style=for-the-badge)
 ![Audio](https://img.shields.io/badge/Audio-48%20kHz-1677a4?style=for-the-badge)
 
-**RTAL-EAI-011 · RealTimeAudioLab · v1.3.0 FINAL**
+**RTAL-EAI-011 · RealTimeAudioLab · v1.3.1 FINAL**
 
 <img src="images/MiniAmused_MAIN.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
 <img src="images/MiniAmused_CASE.jpg" alt="RTAL MiniAmused synthesizer and touchscreen" width="850">
@@ -160,7 +160,7 @@ The arpeggiator runs independently of the graphical refresh. **MIDI Clock (F8) a
 
 *ARP — classic note patterns or probabilistic Markov movement, with live rhythm and performance controls.*
 
-## 05 · NEW in v1.3.0 — dual-pattern 16-step sequencer
+## 05 · NEW in v1.3.1 — dual-pattern 16-step sequencer
 
 **The sequencer lives under `PERF → SEQ`**, alongside the existing Markov arpeggiator. It provides **Variation A and Variation B**, each with 16 editable steps and its own sequence length (1–16). The patterns share a monophonic output, but are independent of the synthesizer's MONO/DUAL voice setting.
 
@@ -264,7 +264,7 @@ Both the delay and the arpeggiator can follow incoming MIDI Clock; the arpeggiat
 </tr>
 </table>
 
-| Subsystem | MiniAmused v1.3.0 FINAL |
+| Subsystem | MiniAmused v1.3.1 FINAL |
 |:--|:--|
 | Controller | ESP32-S3, dual-core Xtensa LX7, up to 240 MHz |
 | Display | 4.3-inch TFT, 480 × 272, QSPI |
@@ -304,7 +304,7 @@ MiniAmused draws inspiration from the **musical immediacy and subtractive signal
 
 ---
 
-### RTAL MiniAmused · v1.3.0 FINAL
+### RTAL MiniAmused · v1.3.1 FINAL
 
 **Three oscillators. A resonant ladder. Two voices. Endless musical directions.**
 
